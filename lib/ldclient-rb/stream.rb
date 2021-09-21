@@ -84,7 +84,7 @@ module LaunchDarkly
       method = message.type
       @config.logger.debug { "[LDClient] Stream received #{method} message: #{message.data}" }
       if method == PUT
-        message = JSON.parse(message.data, symbolize_names: true)
+        message = FastJsonparser.parse(message.data)
         all_data = Impl::Model.make_all_store_data(message[:data])
         @feature_store.init(all_data)
         @initialized.make_true
