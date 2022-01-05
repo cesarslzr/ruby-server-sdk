@@ -22,7 +22,6 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.5.0"
 
   spec.add_development_dependency "aws-sdk-dynamodb", "~> 1.57"
-  spec.add_development_dependency "bundler", "2.2.10"
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "diplomat", "~> 2.4.2"
   spec.add_development_dependency "redis", "~> 4.2"
@@ -38,6 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "concurrent-ruby", "~> 1.1"
   spec.add_runtime_dependency "ld-eventsource", "2.0.1"
 
-  spec.add_runtime_dependency "json", "~> 2.3"
+  spec.add_runtime_dependency "fast_jsonparser", "~> 0.5"
   spec.add_runtime_dependency "http", ">= 4.4.0", "< 6.0.0"
 end
