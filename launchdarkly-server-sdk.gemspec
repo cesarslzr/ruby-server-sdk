@@ -37,7 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "concurrent-ruby", "~> 1.1"
   spec.add_runtime_dependency "ld-eventsource", "2.0.1"
 
-  spec.add_runtime_dependency "json", "~> 2.3"
   spec.add_runtime_dependency "fast_jsonparser", "~> 0.5"
   spec.add_runtime_dependency "http", ">= 4.4.0", "< 6.0.0"
 end
